@@ -4,5 +4,6 @@ import svgr from '@svgr/rollup';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base:'/contact-list/',
   plugins: [react(),svgr()],
 })
