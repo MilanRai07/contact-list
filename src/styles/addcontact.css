@@ -1,0 +1,80 @@
+.add-container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    text-align: center;
+}
+.add-img-container{
+    position: relative;
+    z-index:0;
+}
+.plus{
+    position:absolute;
+    z-index: 1;
+    bottom:10px;
+    right: 38%;
+    background-color: rgb(227, 233, 235);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.file-input{
+display: none;
+}
+.add-input{
+    margin: 0 auto;
+}
+.namebox{
+    margin-bottom: 30px;
+}
+.add-inputbox{
+    outline: none;
+    width:20rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(26, 118, 194);
+    background:#343434;
+    color:#D1D9E0;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media only screen and (max-width:496px){
+    .profile{
+        height:80px;
+        width:80px;
+    }
+    .plus{
+        scale:0.8;
+    }
+    .add-inputbox{
+        width:17rem;
+    }
+}
+@media only screen and (max-width:400px){
+    .add-inputbox{
+        width:14rem;
+        padding:7px;
+    }
+    .profile{
+        height:70px;
+        width:70px;
+    }
+    .plus{
+        right:31%;
+    }
+}
+@media only screen and (max-width:289px){
+    .add-inputbox{
+        max-width:10rem;
+    }
+}

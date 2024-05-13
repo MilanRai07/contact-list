@@ -1,0 +1,148 @@
+.list-container{
+  margin-top: 10px;
+ display: flex;
+ flex-direction: column;
+ gap:10px;
+ overflow: scroll;
+ max-height: 410px;
+}
+.list-container::-webkit-scrollbar {
+  /* display: none; */
+}
+.list-container {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.empty{
+  display:flex;
+  align-items:center;
+  /* justify-content:center; */
+  margin-top:30px;
+  height:410px;
+  flex-direction:column;
+  gap:10px;
+  opacity:75%;
+  color:#007acc;
+}
+.contact-list{
+    display: flex;
+    gap:10px;
+    padding: 10px;
+    /* border-bottom: 2px solid #00b4d8 ; */
+    align-items: center;
+    justify-content: space-between;
+    background-color:#3e3e42;
+    border-radius: 20px;
+    color:#D1D9E0;
+  }
+  .detail{
+    display: flex;
+    align-items: center;
+    gap:25px;
+  }
+  .img-container{
+    overflow: hidden;
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .image{
+    width:100%;
+    height: 100%;
+    transition: 1s ease-in-out;
+  }
+  .image:hover{
+    transform: scale(1.2);
+  }
+  .name{
+    font-size: medium;
+  }
+  .number{
+    font-weight:bold;
+    font-size: small;
+    color:#e7decc;
+  }
+  .list-event{
+    display: flex;
+    gap:8px;
+  }
+  .edit-buton{
+    width:3.5rem;
+    background-color: rgb(26, 118, 194);
+    padding:13px 0px;
+    border-radius: 2px;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+
+  }
+  .edit-buton:hover{
+    background-color: rgb(19, 100, 167);
+  }
+  .del-buton{
+    width:3.5rem;
+    background-color: #de0a26;
+    border-radius: 2px;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .del-buton:hover{
+    background-color: #c0061f;
+  }
+  @media only screen and (max-width:496px){
+    .empty{
+      gap:5px;
+    }
+    .empty h3{
+      font-size:15px;
+    }
+    .empty-box{
+      scale:0.8;
+    }
+    .edit-buton{
+      width:3rem;
+      padding:9px 0;
+      font-size:9px;
+    }
+    .del-buton{
+      width:3rem;
+      padding:9px 0;
+      font-size:9px;
+    }
+    .img-container{
+      width:50px;
+      height:50px;
+    }
+    .detail-info{
+    }
+    .name{
+      font-size:15px;
+    }
+    .number{
+      font-size:10px
+    }
+  }
+  @media only screen and (max-width:394px){
+    .contact-list{
+      flex-direction:column;
+    }
+    .name{
+      font-size:13px
+    }
+    .number{
+      font-size:8px;
+      margin-top:-13px;
+    }
+  }
+  @media only screen and (max-width:289px){
+    .empty h3{
+  font-size:13px;
+  text-align:center;
+    }
+    .empty-box{
+      scale:0.6
+    }
+  }
